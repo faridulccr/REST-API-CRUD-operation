@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.static("views")); // for static file
 
 app.use("/", homeRouter);
-app.use("api/users", userRouter);
+app.use("/api/users", userRouter);
 
 // not found route handler
 app.use((req, res, next) => {
